@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Cruds system</title>
+</head>
+
+<body>
+
+    <div class="w-75 py-5 m-auto">
+
+        <!--******form section******-->
+
+        <div class="form-group">
+
+            <label for="productName ">Product Name </label>
+            <input class="form-control" type="text" name="" id="productName">
+            <div id="warningName" class="alert-danger d-none">
+                <p>The First Char Must Be Cap , And Other Be From 3-8 In Small. </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            <label for="productPrice ">Product Price</label>
+            <input class="form-control" type="number" name="" id="productPrice">
+            <div id="warningPrice" class="alert-danger d-none">
+                <p>Sorry Must Be Numbers 1-9. </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            <label for="productCategory ">Product Category </label>
+            <input class="form-control" type="text" name="" id="productCategory">
+            <div id="warningCategory" class="alert-danger d-none">
+                <p>The First Char Must Be Cap , And Other Be From 1-8 In Small. </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            <label for="productDesc ">Product Desc </label>
+            <textarea class="form-control" type="text" name="" id="productDesc"> </textarea>
+            <div id="warningDesc" class="alert-danger d-none">
+                <p>The First Char Must Be Cap , And Other Be From 1-200 In Small. </p>
+            </div>
+        </div>
+
+        <button id="updateButton" type="submit" onclick="addProduct()" class="btn btn-outline-info "> Add Product
+        </button>
+
+        <div id="warning"> </div>
+
+
+
+    </div>
+
+    <div class=" w-75 m-auto py-3">
+
+        <!--******search section******-->
+
+        <input onkeyup="searchProduct(this.value)" placeholder="search product" type="text"
+            class="form-control w-75 m-auto">
+
+        <!--******products section******-->
+        <table class=" table mt-4">
+            <thead>
+                <td>Index</td>
+                <td>product Name</td>
+                <td> product Price</td>
+                <td> product Category</td>
+                <td> product Desc</td>
+                <td> Update</td>
+                <td> Delete</td>
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="cruds.js"></script>
+</body>
+
+</html>
