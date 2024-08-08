@@ -15,4 +15,4 @@
 
 - *HTML5 & CSS3:* For structuring and styling the application.
 - *JavaScript:* For handling dynamic features and interacting with LocalStorage.
-- *Version Control:* Managed using Git and hosted on GitHub
+
