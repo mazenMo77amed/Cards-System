@@ -13,6 +13,6 @@
 
 ## Technologies Used
 
-- *HTML5 & CSS3:* For structuring and styling the application.
+- *HTML5 & bootstrap:* For structuring and styling the application.
 - *JavaScript:* For handling dynamic features and interacting with LocalStorage.
 
